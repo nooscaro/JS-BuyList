@@ -1,26 +1,25 @@
-
-.right {
-    background-color: #fff7fb;
-    float:right;
-    width: 35%;
-}
-.parent {
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
-    height: 100%;
+body{
     background-color: lightgrey;
 }
-.products {
-    border-bottom: 1px solid gray;
-    padding-left: 5%;
-
-    padding-bottom: 10%;
-    text-align: left;
+.center {
+    margin: 0px;
+    width: 100%;
+    /*background-color: lightgrey;*/
     font-family: Calibri;
-    font-size: 20px;
 }
+.right {
+    float: right;
+    width:35%;
+    background-color: white;
+    border-radius: 5px;
+}
+
 .left {
-    background-color: #fff7fb;
-    width: 45%;
+    width:45%;
+    background-color: white;
+}
+
+.row {
+    font-size: 20px;
+    border-bottom: 1.5px solid gray;
 }
