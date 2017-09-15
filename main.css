@@ -1,3 +1,15 @@
-h1 {
-    color: red;
+body {
+    background-color: lightgrey;
+}
+.right {
+    background-color: #fff7fb;
+    float:right;
+    width: 30%;
+}
+.parent {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.products {
+    border-bottom: 1px solid gray;
 }
