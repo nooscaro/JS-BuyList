@@ -17,7 +17,7 @@ body{
 }
 
 .left {
-    width:62%;
+    width:63%;
     margin-right: 5%;
     background-color: white;
     border-radius: 5px;
@@ -28,8 +28,11 @@ body{
     border-bottom: 1px solid lightgrey;
     padding: 5%;
 }
-
-.add {
+.products {
+    font-size:smaller ;
+    display: inline;
+}
+#add {
     float: right;
     background-color: blue;
     color: white;
@@ -48,9 +51,9 @@ body{
     background-color: red;
     color: white;
 }
-
-.rigth-row {
-    float: right;
+.sold {
+    display: inline;
+    margin-left: 20%;
 }
 
 button {
@@ -61,8 +64,10 @@ button {
     padding-bottom: 1%;
 }
 
+
 .cancel {
     border-radius: 5px;
+    display: inline;
     color: white;
     background-color: red;
 }
@@ -73,4 +78,5 @@ input {
 
 .count {
     display: inline;
+    margin-left: 26%;
 }
