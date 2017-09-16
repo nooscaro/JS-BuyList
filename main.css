@@ -6,8 +6,8 @@ body{
     width: 100%;
     max-width: 800px;
     min-width: 500px;
-    padding-top: 15%;
-    /*background-color: lightgrey;*/
+    padding-top: 5%;
+
     font-family: Calibri;
 }
 .right {
@@ -28,6 +28,8 @@ body{
     font-size: 110%;
     border-bottom: 1px solid lightgrey;
     padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 .products {
     font-size:smaller ;
@@ -54,7 +56,7 @@ body{
 }
 .sold {
     display: inline;
-    margin-left: 20%;
+
 }
 
 button {
@@ -63,6 +65,7 @@ button {
     display: inline-block;
     padding-top: 1%;
     padding-bottom: 1%;
+    border-radius: 3px;
 }
 
 
@@ -71,13 +74,28 @@ button {
     display: inline;
     color: white;
     background-color: red;
+
 }
 
 input {
     width: 80%;
+    border-radius: 2px;
+    border: 0.5px solid lightgrey;
 }
 
 .count {
     display: inline;
-    margin-left: 26%;
+    margin:auto;
+    width:20%;
+}
+
+.right-row {
+
+    width: 30%;
+    margin-left: 11%;
+}
+
+.name {
+    float:left ;
+    width:50%;
 }
