@@ -2,8 +2,10 @@ body{
     background-color: lightgrey;
 }
 .center {
-    margin: 0px;
+    margin: auto;
     width: 100%;
+    max-width: 800px;
+    min-width: 500px;
     /*background-color: lightgrey;*/
     font-family: Calibri;
 }
@@ -22,29 +24,44 @@ body{
 }
 
 .row {
-    font-size: 80%;
+    font-size: 110%;
     border-bottom: 1px solid lightgrey;
     padding: 5%;
 }
 
-#add {
+.add {
     float: right;
     background-color: blue;
     color: white;
     width:19%;
-}
-#plus {
-    border-radius: 20px;
-    background-color: green;
-    color: white;
 
 }
-#minus {
-    border-radius: 20px;
+.plus {
+    border-radius: 90px;
+    background-color: green;
+    color: white;
+    display:inline ;
+
+}
+.minus {
+    border-radius: 90px;
     background-color: red;
     color: white;
 }
-#cancel {
+
+.rigth-row {
+    float: right;
+}
+
+button {
+    border: transparent;
+    padding: 2%;
+    display: inline-block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.cancel {
     border-radius: 5px;
     color: white;
     background-color: red;
@@ -52,4 +69,8 @@ body{
 
 input {
     width: 80%;
+}
+
+.count {
+    display: inline;
 }
