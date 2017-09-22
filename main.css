@@ -181,6 +181,7 @@ input {
     font-family: Helvetica;
     font-size: 22px;
     padding-top: 0;
+    transition: all 1s ease;
 }
 
 .author {
@@ -203,7 +204,6 @@ button::after {
     font-size: 12px;
     display:none;
 
-
 }
 
 button:hover::after {
@@ -214,4 +214,14 @@ button:hover::after {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+@media print {
+    .label {
+        border: 2px solid black;
+        colour: black;
+    }
+    .label-heading {
+        display: none;
+    }
 }
