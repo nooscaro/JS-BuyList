@@ -168,17 +168,18 @@ input {
 
 .label {
     position:fixed;
-    bottom: -105px;
+    bottom: -90px;
     right: 10%;
     width: 130px;
-    height: 160px;
+    height: 150px;
     background-color: purple;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     text-align: center;
     color: white;
-    font-family: Tahoma;
+    font-family: Helvetica;
     font-size: 22px;
+    padding-top: 0;
 }
 
 .author {
@@ -186,7 +187,7 @@ input {
 }
 
 .label:hover {
-    transform: translateY(-105px);
+    transform: translateY(-90px);
     background-color: blue;
     transition: all 1s ease;
 }
