@@ -6,7 +6,7 @@ body{
     margin: auto;
     width: 100%;
     max-width: 800px;
-    min-width: 780px;
+    min-width: 500px;
     padding-top: 5%;
 
     font-family: helvetica;
@@ -114,7 +114,7 @@ input {
 .right-row {
 
     width: 30%;
-    margin-left: 18%;
+    margin-left: 15%;
 }
 
 
@@ -162,5 +162,31 @@ input {
     }
     .left {
         width:100%;
+        margin-bottom: 2%;
     }
+}
+
+.label {
+    position:fixed;
+    bottom: -105px;
+    right: 10%;
+    width: 130px;
+    height: 160px;
+    background-color: purple;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    color: white;
+    font-family: Tahoma;
+    font-size: 22px;
+}
+
+.author {
+    font-size: 18px;
+}
+
+.label:hover {
+    transform: translateY(-105px);
+    background-color: blue;
+    transition: all 1s ease;
 }
