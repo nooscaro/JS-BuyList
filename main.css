@@ -83,6 +83,7 @@ button {
     padding-top: 1%;
     padding-bottom: 1%;
     border-radius: 3px;
+    position:relative;
 }
 
 
@@ -168,10 +169,10 @@ input {
 
 .label {
     position:fixed;
-    bottom: -90px;
+    bottom: -80px;
     right: 10%;
     width: 130px;
-    height: 150px;
+    height: 140px;
     background-color: purple;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -183,11 +184,34 @@ input {
 }
 
 .author {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .label:hover {
-    transform: translateY(-90px);
+    transform: translateY(-80px);
     background-color: blue;
     transition: all 1s ease;
+}
+
+button::after {
+    content: "this is a tooltip";
+    attr(data-tooltip);
+    background-color: purple;
+    border-radius: 10px;
+    color: white;
+    font-family: Tahoma;
+    font-size: 12px;
+    display:none;
+
+
+}
+
+button:hover::after {
+    display: block;
+    position: absolute;
+    top: -20px;
+    width: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
