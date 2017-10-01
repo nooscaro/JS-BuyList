@@ -2,21 +2,22 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>Grocery list</title>
+    <title>Buy list</title>
 
 
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
     <div class="center">
-        <div class = "left">
+        <div class = "left listOfItems">
             <div class="row">
                 <input type="text" placeholder="Назва товару">
                 <button id="add" data-tooltip = "Тисни сюди!">Додати</button>
             </div>
+            <div class="oneItem">
             <div class="row">
                 <span class="name">
-                    <p class="products">Сир</p>
+                    <p class="products title">Сир</p>
                 </span>
                 <div class = "count">
                     <button class="minus products" data-tooltip="Або сюди">-</button>
@@ -25,8 +26,9 @@
                 </div>
                 <span class = "right-row">
                     <button class="sold" data-tooltip="Будь лаааска">Куплено</button>
-                    <button class="cancel" data-tooltip="Ну, нормально">x</button>
+                    <button class="cancel" data-tooltip="Ну, нормально ж спілкувалися">x</button>
                 </span>
+            </div>
             </div>
         </div>
         <div class = "right">
@@ -55,6 +57,6 @@
         <p class="label-heading">Vera Baklanova</p>
     </div>
     <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">	</script>
-    <script	type="text/javascript" src="main.js">	</script>
+    <script	type="text/javascript" src="main.js"></script>
 </body>
 </html>

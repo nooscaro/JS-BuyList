@@ -20,6 +20,7 @@ body{
     box-sizing: border-box;
 }
 
+
 .left {
     width:60%;
     margin-right: 2%;
@@ -230,7 +231,7 @@ button::after {
 }
 
 button:hover::after {
-    
+
     visibility: visible;
     transform: translateY(-80%) scale(1.2,1.2);
     transition: all 0.5s ease;
@@ -247,4 +248,11 @@ button:hover::after {
     .label-heading {
         display: none;
     }
+}
+
+
+.oneItem {
+    display: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 5%;
 }
