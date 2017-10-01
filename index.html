@@ -19,41 +19,13 @@
                     <p class="products">Сир</p>
                 </span>
                 <div class = "count">
-                    <button class="minus products">-</button>
+                    <button class="minus products" data-tooltip="Або сюди">-</button>
                     <p class="products prodquant">3</p>
-                    <button class="plus products">+</button>
+                    <button class="plus products" data-tooltip="Ну, кудись вже натисніть">+</button>
                 </div>
                 <span class = "right-row">
-                    <button class="sold">Куплено</button>
-                    <button class="cancel">x</button>
-                </span>
-            </div>
-            <div class="row">
-                <span class="name">
-                    <p class="products">Морозиво</p>
-                </span>
-                <div class = "count">
-                    <button class="minus products">-</button>
-                    <p class="products prodquant">1</p>
-                    <button class="plus products">+</button>
-                </div>
-                <span class = "right-row">
-                    <button class="sold">Куплено</button>
-                    <button class="cancel">x</button>
-                </span>
-            </div>
-            <div class="row">
-                <span class="name">
-                    <p class="products">Помідори</p>
-                </span>
-                <div class = "count">
-                    <button class="minus products">-</button>
-                    <p class="products prodquant">5</p>
-                    <button class="plus products">+</button>
-                </div>
-                <span class = "right-row">
-                    <button class="sold">Куплено</button>
-                    <button class="cancel">x</button>
+                    <button class="sold" data-tooltip="Будь лаааска">Куплено</button>
+                    <button class="cancel" data-tooltip="Ну, нормально">x</button>
                 </span>
             </div>
         </div>
@@ -79,7 +51,10 @@
     </div>
     <div class="label">
         <p class="label-heading">Buy List</p>
-        <p class="author">Created By:<br>Vera Baklanova</p>
+        <p class="author">Created By:</p>
+        <p class="label-heading">Vera Baklanova</p>
     </div>
+    <script	type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">	</script>
+    <script	type="text/javascript" src="main.js">	</script>
 </body>
 </html>
