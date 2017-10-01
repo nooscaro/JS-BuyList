@@ -115,7 +115,7 @@ input {
 
 .right-row {
 
-    width: 30%;
+    width: 25%;
     margin-left: 15%;
 }
 
@@ -233,7 +233,7 @@ button::after {
 button:hover::after {
 
     visibility: visible;
-    transform: translateY(-80%) scale(1.2,1.2);
+    transform: translateY(-100%) scale(1.2,1.2);
     transition: all 0.5s ease;
 
 

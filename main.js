@@ -10,11 +10,28 @@ $(function() {
         node.find('.cancel').click(function () {
             node.remove();
         });
+        //Plus
+        node.find('.plus').click(function () {
+            var quant = parseInt(node.find('p.prodquant').text());
+            node.find('p.prodquant').text(quant+1);
+
+        });
+        node.find('.minus').click(function () {
+            var quant = parseInt(node.find('p.prodquant').text());
+            if(quant>1)
+            node.find('p.prodquant').text(quant-1);
+
+        });
         LIST.append(node);
     }
 
     $('#add').click(function () {
         var name = $('input').val();
+
+        if(name)
         addItem(name);
+
     });
+
+
 });
