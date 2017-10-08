@@ -1,11 +1,16 @@
 $(function() {
     var LIST = $('.listOfItems');
     var ITEM_TEMPLATE = $('.oneItem').html();
+    var LEFT_ITEM_TEMPLATE = $('.leftItem').html();
+    var LEFT_TO_BUY_LIST = $('.leftToBuyItems');
 
     function addItem(title) {
         var node = $(ITEM_TEMPLATE);
+        var rightNode = $(LEFT_ITEM_TEMPLATE);
         //Set the title of the product
         node.find('.title').text(title);
+        rightNode.find('.itemName').text(title);
+        rightNode.find('.quant').text(1);
         //Delete
         node.find('.cancel').click(function () {
             node.remove();
@@ -62,7 +67,7 @@ $(function() {
             node.find('input.name').hide();
 
         });
-
+        LEFT_TO_BUY_LIST.append(rightNode);
         LIST.append(node);
     }
 

@@ -268,3 +268,7 @@ input.name {
     border-bottom: 1px solid lightgrey;
     padding: 5%;
 }
+
+.leftItem {
+    display: none;
+}
