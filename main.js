@@ -3,6 +3,7 @@ $(function() {
     var ITEM_TEMPLATE = $('.oneItem').html();
     var LEFT_ITEM_TEMPLATE = $('.leftItem').html();
     var LEFT_TO_BUY_LIST = $('.leftToBuyItems');
+    var BOUGHT_LIST = $('.boughtItems');
 
     function addItem(title) {
         var node = $(ITEM_TEMPLATE);
@@ -19,12 +20,14 @@ $(function() {
         node.find('.plus').click(function () {
             var quant = parseInt(node.find('p.prodquant').text());
             node.find('p.prodquant').text(quant+1);
-
+            rightNode.find('.quant').text(quant+1);
         });
         node.find('.minus').click(function () {
             var quant = parseInt(node.find('p.prodquant').text());
-            if(quant>1)
-            node.find('p.prodquant').text(quant-1);
+            if(quant>1) {
+                node.find('p.prodquant').text(quant - 1);
+                rightNode.find('.quant').text(quant-1);
+            }
             else
                 node.find('.minus').prop('disabled',true);
 
@@ -38,6 +41,11 @@ $(function() {
                 node.find('.unbuy').show();
                 node.fadeIn(function () {
                     node.find('.products.title').css('text-decoration','line-through');
+                    rightNode.find('.itemName').css('text-decoration','line-through');
+                    rightNode.find('.quant').css('text-decoration','line-through');
+                    rightNode.remove();
+                    BOUGHT_LIST.append(rightNode);
+
                 });
             });
         });
@@ -50,7 +58,12 @@ $(function() {
                 node.find('.minus').css('visibility','visible');
                 node.find('.cancel').css('visibility','visible');
                 node.find('.products.title').css('text-decoration','none');
-                node.fadeIn();
+                node.fadeIn(function () {
+                    rightNode.find('.itemName').css('text-decoration','none');
+                    rightNode.find('.quant').css('text-decoration','none');
+                    rightNode.remove();
+                    LEFT_TO_BUY_LIST.append(rightNode);
+                });
             });
         });
 
