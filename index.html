@@ -11,21 +11,23 @@
     <div class="center">
         <div class = "left listOfItems">
             <div class="row">
-                <input type="text" placeholder="Назва товару">
+                <input type="text" class="addProduct" placeholder="Назва товару">
                 <button id="add" data-tooltip = "Тисни сюди!">Додати</button>
             </div>
             <div class="oneItem">
             <div class="row">
                 <span class="name">
                     <p class="products title">Сир</p>
+                    <input type="text" class="name">
                 </span>
                 <div class = "count">
                     <button class="minus products" data-tooltip="Або сюди">-</button>
-                    <p class="products prodquant">3</p>
+                    <p class="products prodquant">1</p>
                     <button class="plus products" data-tooltip="Ну, кудись вже натисніть">+</button>
                 </div>
                 <span class = "right-row">
-                    <button class="sold" data-tooltip="Будь лаааска">Куплено</button>
+                    <button class="buy" data-tooltip="Будь лаааска">Куплено</button>
+                    <button class="unbuy" data-tooltip="Не купити">Не куплено</button>
                     <button class="cancel" data-tooltip="Ну, нормально ж спілкувалися">x</button>
                 </span>
             </div>

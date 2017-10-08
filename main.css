@@ -70,11 +70,19 @@ body{
     padding-top: 0.5%;
     font-weight: bold;
 }
-.sold {
+.buy,.unbuy {
     display: inline;
     font-size: 11px;
     padding: 2%;
 
+}
+
+.unbuy {
+    display: none;
+}
+
+.sold {
+    text-decoration: line-through;
 }
 
 button {
@@ -96,7 +104,7 @@ button {
 
 }
 
-input {
+input.addProduct {
     width: 79%;
     background-size: auto;
     border-radius: 2px;
@@ -110,7 +118,7 @@ input {
 .count {
     display: inline;
     margin:auto;
-    width:30%;
+    width:25%;
 }
 
 .right-row {
@@ -126,7 +134,7 @@ input {
 
 .name {
     float:left ;
-    width:40%;
+    width:35%;
     font-size: 18px;
 }
 
@@ -250,6 +258,10 @@ button:hover::after {
     }
 }
 
+input.name {
+    display: none;
+
+}
 
 .oneItem {
     display: none;
