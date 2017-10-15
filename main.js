@@ -13,9 +13,7 @@ $(function() {
         rightNode.find('.itemName').text(title);
         rightNode.find('.quant').text(1);
         //Delete
-        node.find('.cancel').click(function () {
-            node.remove();
-        });
+
         //Plus
         node.find('.plus').click(function () {
             var quant = parseInt(node.find('p.prodquant').text());
@@ -65,6 +63,12 @@ $(function() {
                     LEFT_TO_BUY_LIST.append(rightNode);
                 });
             });
+        });
+
+        node.find('.cancel').click(function () {
+            rightNode.remove();
+            node.remove();
+
         });
 
         node.find('.products.title').click(function () {

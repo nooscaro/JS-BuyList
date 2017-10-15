@@ -141,23 +141,28 @@ input.addProduct {
 .listitem {
     background-color: lightgrey;
     border-radius: 3px;
-    display: inline;
+    display: inline-table;
     padding: 3%;
     font-size: 9px;
     /*font-weight: bold;*/
     margin: 1%;
     vertical-align: 80%;
     line-height: 200%;
+    width: fit-content;
 }
 
 .quant {
     border-radius: 50%;
     background-color: orangered;
     color: white;
-    padding: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    /*width: 100%;*/
     display: inline;
+    text-align: center;
+    padding: 7%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin-left: 2%;
+    /*margin-left: 10%;*/
 }
 
 .prodquant {
@@ -180,7 +185,7 @@ input.addProduct {
     quant {
         padding-left: 1%;
         padding-right: 1%;
-
+        /*display: inline-flex;*/
     }
 }
 
@@ -277,7 +282,7 @@ input.name {
 }
 
 .itemName {
-    display: inline;
+    /*display: inline-flex;*/
 }
 
 .leftToBuyItems {
